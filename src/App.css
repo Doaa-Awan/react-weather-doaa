@@ -456,7 +456,8 @@ h3 {
   color: white;
   font-size: 15px;
   position: relative;
-  right: -700px;
+  right: -30px;
+  /* right: -700px; */
 }
 
 .link {
@@ -548,7 +549,7 @@ h3 {
   .code-link {
     font-size: 13px;
     position: relative;
-    top: -600px;
+    /* top: -600px; */
     color: white;
     right: 0px;
   }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   // const [ready, setReady] = useState(false);
@@ -10,6 +11,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       city: response.data.name,
       description: response.data.weather[0].description,
@@ -45,10 +47,10 @@ export default function Weather(props) {
                 />
                 <button className="fa-solid fa-magnifying-glass search-icon"></button>
               </form>
-              <button
+              {/* <button
                 className="col-2 fa-solid fa-lightbulb lightBtn"
                 id="light"
-              ></button>
+              ></button> */}
             </nav>
             <div className="row">
               <div className="col">
@@ -66,10 +68,8 @@ export default function Weather(props) {
                         className="fa-solid fa-arrow-rotate-right refresh-icon"
                       ></button>
                     </h2>
-                    <ul className="date">
-                      <li className="current-day">Monday</li>
-                      <li className="current-time">12:45</li>
-                    </ul>
+                    <FormattedDate date={weatherData.date} />
+
                     <div className="info">
                       <ul>
                         <li>
@@ -115,10 +115,10 @@ export default function Weather(props) {
               </div>
             </div>
             <div className="forecast" id="forecastList"></div>
-            <button
+            {/* <button
               className="fa-solid fa-volume-high audioBtn"
               id="audioBtn"
-            ></button>
+            ></button> */}
             <div className="col-xl-5">
               <small className="col-12 code-link">
                 <a
