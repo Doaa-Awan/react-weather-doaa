@@ -315,17 +315,22 @@ h3 {
 }
 
 .audioBtn {
+  font-size: 35px;
+  background-color: transparent;
+  -webkit-text-stroke: 1px var(--pink);
+  color: var(--white);
+  border: none;
   float: right;
-  margin-right: 150px;
+  margin-right: 50px;
   position: relative;
   bottom: 90px;
   right: 10px;
   width: 140px;
   height: 50px;
-  border-radius: 30px;
+  /* border-radius: 30px;
   color: var(--pink);
   border: 1px solid var(--pink);
-  background-color: var(--white);
+  background-color: var(--white); */
   transition: all 200ms ease-in-out;
 }
 
