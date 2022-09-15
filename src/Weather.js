@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import PreLoader from "./PreLoader";
+import Footer from "./Footer";
+import Switch from "./Switch";
 // import Video from "./Video";
-// import PreLoader from "./PreLoader";
 
 export default function Weather(props) {
   // const [ready, setReady] = useState(false);
@@ -76,32 +77,11 @@ export default function Weather(props) {
               className="fa-solid fa-volume-high audioBtn"
               id="audioBtn"
             ></button> */}
-            <div className="col-xl-5">
-              <small className="col-12 code-link">
-                <a
-                  href="https://github.com/Doaa-Awan/react-weather-doaa"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link"
-                >
-                  Open-Source Code{" "}
-                </a>
-                by{" "}
-                <a
-                  href="https://rad-daifuku-2c6ded.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="link"
-                >
-                  Doaa Awan
-                </a>
-              </small>
-            </div>
+            <Footer />
+            <Switch/>
+            
 
-            <label className="switch">
-              <input type="checkbox" id="toggle" />
-              <span className="slider round"></span>
-            </label>
+           
           </div>
         </div>
       </div>

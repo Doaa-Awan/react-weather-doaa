@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,7 +12,9 @@ export default function WeatherInfo(props) {
               id="location-button"
               className="fa-solid fa-location-dot location-icon"
             ></button>
-            <h1 id="location">{props.data.city}, {props.data.country}</h1>
+            <h1 id="location">
+              {props.data.city}, {props.data.country}
+            </h1>
             <h2>
               Current Temperature
               <button
@@ -44,15 +47,18 @@ export default function WeatherInfo(props) {
       <div className="col">
         <section>
           <h3>NOW</h3>
+          <div className="d-flex justify-content-center">
           <div className="temp" id="tempNumber">
             {Math.round(props.data.temperature)}°
+          <WeatherIcon code={props.data.icon}/>
           </div>
-          <img
+          </div>
+          {/* <img
             src={props.data.iconUrl}
             alt=""
             className="icon"
             id="icon-element"
-          />
+          /> */}
           <p
             className="weather-description text-capitalize"
             id="weather-description"

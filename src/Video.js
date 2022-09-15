@@ -1,4 +1,5 @@
 import React from "react";
+import rain from "./images/rain.mp4"
 
 export default function Video(props) {
 //   const codeMapping = {
@@ -7,7 +8,7 @@ export default function Video(props) {
 //   };
   return (
     <video autoPlay loop muted plays-inline="true" className="videoBG" id="vid">
-      <source id="src" src="../images/rain.mp4" type="video/mp4" />
+      <source id="src" src={rain} type="video/mp4" />
     </video>
   );
 }

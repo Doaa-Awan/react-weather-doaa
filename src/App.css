@@ -213,22 +213,29 @@ h3 {
 
 /* TEMP SECTION CIRCLE */
 
-.icon {
+.icon canvas {
   display: inline-block;
   position: relative;
-  left: 20px;
-  height: 200px;
+  left: 10px;
+  /* top: 30px; */
+  /* size: 300px !important; */
+  height: 115px;
+  /* height: 200px; */
 }
 
 .temp {
+  /* margin: 0 auto; */
   color: #42a5f5;
   font-size: 110px;
   display: inline-block;
   text-align: right;
   position: relative;
-  left: 60px;
+  /* left: 60px; */
   top: 30px;
+  margin-bottom: 30px;
 }
+
+
 
 .weather-description {
   color: #ff54a2;
