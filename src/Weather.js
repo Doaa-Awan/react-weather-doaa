@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import PreLoader from "./PreLoader";
+// import Video from "./Video";
+// import PreLoader from "./PreLoader";
 
 export default function Weather(props) {
   // const [ready, setReady] = useState(false);
@@ -19,6 +22,7 @@ export default function Weather(props) {
       country: response.data.sys.country,
       description: response.data.weather[0].description,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
     // setReady(true);
   }
@@ -43,16 +47,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="videoContainer bgImgColor">
-        <video
-          autoPlay
-          loop
-          muted
-          plays-inline="true"
-          className="videoBG"
-          id="vid"
-        >
-          <source id="src" src="#" type="video/mp4" />
-        </video>
+        {/* <Video code={props.data.icon} /> */}
 
         <div className="weather-app">
           <div className="container">
@@ -113,6 +108,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return <PreLoader />;
   }
 }
