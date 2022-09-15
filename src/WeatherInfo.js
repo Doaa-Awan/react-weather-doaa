@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
               id="location-button"
               className="fa-solid fa-location-dot location-icon"
             ></button>
-            <h1 id="location">{props.data.city}</h1>
+            <h1 id="location">{props.data.city}, {props.data.country}</h1>
             <h2>
               Current Temperature
               <button
