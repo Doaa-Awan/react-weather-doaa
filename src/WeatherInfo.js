@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
               <ul>
                 <li>
                   <span className="wind">Wind: </span>
-                  <span id="wind-speed"></span> {props.data.wind} km/h
+                  <span id="wind-speed"></span> {Math.round(props.data.wind)} km/h
                 </li>
                 <li>
                   <span className="humidity">Humidity: </span>
@@ -66,7 +66,7 @@ export default function WeatherInfo(props) {
             {props.data.description}
           </p>
           <p className="feels-like">
-            Feels like <span id="feels-like"></span>° C
+            Feels like <span id="feels-like">{Math.round(props.data.feel)}</span>° C
           </p>
         </section>
       </div>

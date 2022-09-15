@@ -4,6 +4,8 @@ import WeatherInfo from "./WeatherInfo";
 import PreLoader from "./PreLoader";
 import Footer from "./Footer";
 import Switch from "./Switch";
+// import rain from "../public/videos/rain.mp4";
+
 // import Video from "./Video";
 
 export default function Weather(props) {
@@ -17,6 +19,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      feel: response.data.main.feels_like,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       city: response.data.name,
@@ -48,6 +51,16 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="videoContainer bgImgColor">
+        <video
+          autoPlay
+          loop
+          muted
+          plays-inline="true"
+          className="videoBG"
+          id="vid"
+        >
+          <source id="src" src="" type="video/mp4" />
+        </video>
         {/* <Video code={props.data.icon} /> */}
 
         <div className="weather-app">
@@ -78,10 +91,7 @@ export default function Weather(props) {
               id="audioBtn"
             ></button> */}
             <Footer />
-            <Switch/>
-            
-
-           
+            <Switch />
           </div>
         </div>
       </div>
