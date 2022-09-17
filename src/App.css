@@ -447,7 +447,8 @@ h3 {
 }
 
 .bgImgColor {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, hotpink, pink, var(--main-blue), var(--main-pink));
   animation: change 10s ease-in-out infinite;
   width: 100%;
   height: 100vh;
