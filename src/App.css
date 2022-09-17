@@ -250,9 +250,22 @@ h3 {
   left: -20px;
 }
 
+.unitLine {
+  color: grey;
+  font-weight: 200;
+}
+
 .units a {
   text-decoration: none;
+  color: grey;
+  font-weight: 200;
 }
+
+.c, .f {
+  font-weight: 500;
+}
+
+
 
 
 
