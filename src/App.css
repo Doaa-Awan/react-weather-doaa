@@ -1,7 +1,7 @@
 :root {
-    --main-blue: #42a5f5;
-    --main-pink: #ff54a2;
-  }
+  --main-blue: #42a5f5;
+  --main-pink: #ff54a2;
+}
 
 * {
   font-family: "Poppins", sans-serif;
@@ -54,9 +54,12 @@ h3 {
   font-size: 40px;
   font-weight: 600;
   text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   position: relative;
-  top: 30px;
+  top: 10px;
+  /* margin: 0 auto; */
 }
 
 /* CONTAINER */
@@ -223,20 +226,21 @@ h3 {
 .icon canvas {
   display: inline-block;
   position: relative;
-  /* left: -30px; */
+  left: 5px;
   top: 10px;
   /* top: 30px; */
   /* size: 300px !important; */
-  height: 115px;
+  height: 105px;
+  margin-left: 10px;
   /* height: 200px; */
 }
 
 .temp {
   /* margin: 0 auto; */
   color: #42a5f5;
-  font-size: 110px;
+  font-size: 100px;
   display: inline-block;
-  text-align: right;
+  text-align: left;
   position: relative;
   /* left: 60px; */
   top: 30px;
@@ -261,34 +265,31 @@ h3 {
   font-weight: 200;
 }
 
-.c, .f {
+.c,
+.f {
   font-weight: 500;
 }
 
-
-
-
+.weather-description,
+.feels-like {
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+}
 
 .weather-description {
-  color: #ff54a2;
-  font-size: 20px;
   font-weight: 600;
-  text-align: center;
-  text-transform: capitalize;
-  position: relative;
-  bottom: 20px;
   margin-bottom: 0;
+  color: #ff54a2;
+  text-transform: capitalize;
 }
 
 .feels-like {
-  color: grey;
-  font-size: 20px;
   display: block;
   margin: 0 auto;
-  text-align: center;
+  color: grey;
   padding: 0;
-  position: relative;
-  bottom: 20px;
 }
 
 /* FORECAST */
@@ -1141,4 +1142,3 @@ h3 {
     display: none !important;
   }
 }
-

@@ -49,7 +49,7 @@ export default function WeatherInfo(props) {
       <div className="col">
         <section>
           <h3>NOW</h3>
-          <div className="d-flex justify-content-center ms-3 ">
+          <div className="d-flex justify-content-center">
             <WeatherIcon code={props.data.icon} />
             <WeatherTemperature celsius={props.data.temperature}/>
           </div>
