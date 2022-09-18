@@ -4,6 +4,7 @@ import WeatherInfo from "./WeatherInfo";
 import PreLoader from "./PreLoader";
 import Footer from "./Footer";
 import Switch from "./Switch";
+import WeatherForecast from "./WeatherForecast";
 // import rain from "../public/videos/rain.mp4";
 
 // import Video from "./Video";
@@ -84,8 +85,13 @@ export default function Weather(props) {
               ></button> */}
             </nav>
             <WeatherInfo data={weatherData} />
+            <WeatherForecast
+              forecastDay="Mon"
+              tempMax={17}
+              tempMin={12}
+              icon="fa-solid fa-cloud-sun"
+            />
 
-            <div className="forecast" id="forecastList"></div>
             {/* <button
               className="fa-solid fa-volume-high audioBtn"
               id="audioBtn"

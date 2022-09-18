@@ -296,20 +296,20 @@ h3 {
 
 .forecast {
   text-align: center;
-  color: #ff54a2;
+  color: white;
   font-size: 30px;
-  margin-top: 30px;
-  margin-right: 450px;
+  /* margin-top: 30px; */
+  /* margin-right: 450px; */
 }
 
 .forecast-col {
-  border: 1px solid #ff54a2;
-  border-radius: 30px;
-  padding-top: 10px;
-  background-color: rgba(248, 248, 248, 0.7);
-  position: relative;
-  top: 30px;
-  margin-right: 15px;
+  /* border: 1px solid #ff54a2; */
+  /* border-radius: 30px; */
+  /* padding-top: 10px; */
+  /* background-color: rgba(248, 248, 248, 0.7); */
+  /* position: relative; */
+  /* top: 30px; */
+  /* margin-right: 15px; */
   font-weight: 300;
   transition: all 200ms ease-in-out;
   height: 200px;
@@ -317,16 +317,31 @@ h3 {
 }
 
 .forecast-day {
-  font-weight: 400;
+  font-weight: 200;
+  font-size: 20px;
+  /* margin-bottom: 5px; */
+}
+
+
+.forecast-icon canvas {
+  height: 50px;
+  color: white;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  left: -1px;
+  
 }
 
 .forecast-temp {
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
 }
 
 .forecast-temp-min {
-  color: grey;
+  color: white;
   font-size: 15px;
   font-weight: 100;
   position: relative;
@@ -334,9 +349,9 @@ h3 {
   text-align: center;
 }
 
-.forecast-col:hover {
-  color: #42a5f5;
-}
+/* .forecast-col:hover {
+  color: var(--main-pink);
+} */
 
 /* BUTTONS */
 
