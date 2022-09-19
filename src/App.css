@@ -145,8 +145,12 @@ h3 {
   content: "";
   width: 10px;
   height: 70%;
-  background: linear-gradient(hotpink, lightpink);
+  background: transparent;
+  /* background: var(--main-pink); */
+  opacity: 0.6;
+  /* background: linear-gradient(hotpink, lightpink); */
   border: 1px solid white;
+  border-radius: 30px;
   /* background: linear-gradient(#ff469f, #42a5f5); */
   position: absolute;
   left: -40px;

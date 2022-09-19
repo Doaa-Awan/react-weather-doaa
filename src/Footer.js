@@ -7,7 +7,7 @@ export default function Footer() {
         <a
           href="https://github.com/Doaa-Awan/react-weather-doaa"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="link"
         >
           Open-Source Code{" "}
@@ -16,7 +16,7 @@ export default function Footer() {
         <a
           href="https://rad-daifuku-2c6ded.netlify.app/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="link"
         >
           Doaa Awan

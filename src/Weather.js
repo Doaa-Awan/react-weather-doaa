@@ -15,9 +15,10 @@ export default function Weather(props) {
   let [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
+    // console.log(response.data);
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       feel: response.data.main.feels_like,
@@ -85,12 +86,7 @@ export default function Weather(props) {
               ></button> */}
             </nav>
             <WeatherInfo data={weatherData} />
-            <WeatherForecast
-              forecastDay="Mon"
-              tempMax={17}
-              tempMin={12}
-              icon="fa-solid fa-cloud-sun"
-            />
+            <WeatherForecast coord={weatherData.coord} />
 
             {/* <button
               className="fa-solid fa-volume-high audioBtn"

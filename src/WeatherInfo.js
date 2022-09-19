@@ -50,27 +50,24 @@ export default function WeatherInfo(props) {
         <section>
           <h3>NOW</h3>
           <div className="d-flex justify-content-center">
-            <WeatherIcon code={props.data.icon} color="#42a5f5"/>
-            <WeatherTemperature celsius={props.data.temperature} />
+            <WeatherIcon code={props.data.icon} color="#42a5f5" />
+            <WeatherTemperature
+              celsius={props.data.temperature}
+              description={props.data.description}
+              feel={props.data.feel}
+            />
           </div>
-          {/* <img
-            src={props.data.iconUrl}
-            alt=""
-            className="icon"
-            id="icon-element"
-          /> */}
-          <p
-            className="weather-description text-capitalize"
-            id="weather-description"
-          >
-            {props.data.description}
-          </p>
-          <p className="feels-like">
-            Feels like{" "}
-            <span id="feels-like">{Math.round(props.data.feel)}</span>° C
-          </p>
+          <div>
+            <p className="weather-description text-capitalize">
+              {props.data.description}
+            </p>
+            <p className="feels-like">
+              Feels like <span>{Math.round(props.data.feel)}</span>° C
+            </p>
+          </div>
         </section>
       </div>
     </div>
   );
 }
+
