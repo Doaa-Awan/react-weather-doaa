@@ -86,7 +86,11 @@ export default function Weather(props) {
               ></button> */}
             </nav>
             <WeatherInfo data={weatherData} />
-            <WeatherForecast coord={weatherData.coord} />
+            <div className="row">
+              <div className="col-6">
+                <WeatherForecast coord={weatherData.coord} />
+              </div>
+            </div>
 
             {/* <button
               className="fa-solid fa-volume-high audioBtn"
