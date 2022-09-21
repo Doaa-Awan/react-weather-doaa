@@ -5,6 +5,8 @@ import PreLoader from "./PreLoader";
 import Footer from "./Footer";
 import Switch from "./Switch";
 import WeatherForecast from "./WeatherForecast";
+import ReactAnimatedWeather from "react-animated-weather/build/ReactAnimatedWeather";
+
 // import rain from "../public/videos/rain.mp4";
 
 // import Video from "./Video";
@@ -85,13 +87,21 @@ export default function Weather(props) {
                 id="light"
               ></button> */}
             </nav>
+
             <WeatherInfo data={weatherData} />
             <div className="row">
               <div className="col-7">
                 <WeatherForecast coord={weatherData.coord} />
               </div>
+              <div>
+                <ReactAnimatedWeather
+                  icon="RAIN"
+                  color="white"
+                  size={64}
+                  animate={true}
+                />
+              </div>
             </div>
-
             {/* <button
               className="fa-solid fa-volume-high audioBtn"
               id="audioBtn"

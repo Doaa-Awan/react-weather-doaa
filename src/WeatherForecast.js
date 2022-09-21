@@ -7,6 +7,7 @@ export default function WeatherForecast(props) {
   let [forecast, setForecast] = useState(null);
 
   function handleResponse(response) {
+    console.log(response.data.daily);
     setForecast(response.data.daily);
     setLoaded(true);
   }
@@ -41,8 +42,6 @@ export default function WeatherForecast(props) {
         </div>
       </div>
     );
-
-   
   } else {
     let apiKey = "8d9838178b5b401f1b4e7cb5af18e210";
     let lon = props.coord.lon;
