@@ -13,22 +13,36 @@ export default function WeatherForecast(props) {
 
   if (loaded) {
     return (
-        <div>
-          {forecast.map(function(dailyForecast, index) {
-            if (index < 6) {
-              return (
-                <div className="forecast" key={index}>
-                  <div className="col-2">
-                  <WeatherForecastDay data={dailyForecast} />
-                  </div>
-                </div>
-              );
-            } else {
-              return null;
-            }
-          })}
+      <div className="row">
+        <div className="col">
+          <div className="forecast" id="forecastList">
+            <WeatherForecastDay data={forecast[1]} />
+          </div>
         </div>
+        <div className="col">
+          <div className="forecast" id="forecastList">
+            <WeatherForecastDay data={forecast[2]} />
+          </div>
+        </div>
+        <div className="col">
+          <div className="forecast" id="forecastList">
+            <WeatherForecastDay data={forecast[3]} />
+          </div>
+        </div>
+        <div className="col">
+          <div className="forecast" id="forecastList">
+            <WeatherForecastDay data={forecast[4]} />
+          </div>
+        </div>
+        <div className="col">
+          <div className="forecast" id="forecastList">
+            <WeatherForecastDay data={forecast[5]} />
+          </div>
+        </div>
+      </div>
     );
+
+   
   } else {
     let apiKey = "8d9838178b5b401f1b4e7cb5af18e210";
     let lon = props.coord.lon;

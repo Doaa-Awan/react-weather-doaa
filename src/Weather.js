@@ -87,7 +87,7 @@ export default function Weather(props) {
             </nav>
             <WeatherInfo data={weatherData} />
             <div className="row">
-              <div className="col-6">
+              <div className="col-7">
                 <WeatherForecast coord={weatherData.coord} />
               </div>
             </div>
