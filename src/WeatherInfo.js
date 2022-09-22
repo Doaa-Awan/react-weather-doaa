@@ -38,11 +38,11 @@ export default function WeatherInfo(props) {
                 </li>
               </ul>
             </div>
-            <button id="blankBtn" className="blankBtn btns"></button>
+            {/* <button id="blankBtn" className="blankBtn btns"></button>
             <button id="blueBtn" className="blueBtn btns"></button>
             <button id="greenBtn" className="greenBtn btns"></button>
             <button id="pinkBtn" className="pinkBtn btns"></button>
-            <button id="yellowBtn" className="yellowBtn btns"></button>
+            <button id="yellowBtn" className="yellowBtn btns"></button> */}
           </div>
         </main>
       </div>
