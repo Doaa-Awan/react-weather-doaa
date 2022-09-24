@@ -24,10 +24,14 @@ export default function WeatherForecastDay(props) {
   return (
     <span className="forecast-col">
       <div className="forecast-day text-uppercase">{day()}</div>
-      <div className="forecast-img">
+      <div className="d-flex justify-content-center">
         {/* <WeatherIcon code={props.data.weather[0].icon} color="white" /> */}
         {/* <img src={props.icon} /> */}
-        <img src={url} alt={props.data.weather[0].description} />
+        <img
+          src={url}
+          alt={props.data.weather[0].description}
+          className="forecast-img"
+        />
       </div>
       <div className="forecast-temp">
         {maxTemperature()} <br />

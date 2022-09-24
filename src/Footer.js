@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="col-xl-5 mt-5">
+    <div className="mt-5">
       <small className="col-12 code-link">
         <a
           href="https://github.com/Doaa-Awan/react-weather-doaa"

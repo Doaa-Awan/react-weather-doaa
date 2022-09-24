@@ -19,27 +19,27 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="row">
-        <div className="col">
+        <div className="col sm-pd">
           <div className="forecast" id="forecastList">
-            <WeatherForecastDay data={forecast[0]} icon={props.icon}/>
+            <WeatherForecastDay data={forecast[0]} icon={props.icon} />
           </div>
         </div>
-        <div className="col">
+        <div className="col sm-pd">
           <div className="forecast" id="forecastList">
             <WeatherForecastDay data={forecast[1]} />
           </div>
         </div>
-        <div className="col">
+        <div className="col sm-pd">
           <div className="forecast" id="forecastList">
             <WeatherForecastDay data={forecast[2]} />
           </div>
         </div>
-        <div className="col">
+        <div className="col sm-pd">
           <div className="forecast" id="forecastList">
             <WeatherForecastDay data={forecast[3]} />
           </div>
         </div>
-        <div className="col">
+        <div className="col sm-pd">
           <div className="forecast" id="forecastList">
             <WeatherForecastDay data={forecast[4]} />
           </div>
