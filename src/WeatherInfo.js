@@ -2,6 +2,7 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import RefreshBtn from "./RefreshBtn";
 
 export default function WeatherInfo(props) {
   return (
@@ -18,10 +19,8 @@ export default function WeatherInfo(props) {
             </h1>
             <h2>
               Current Temperature
-              <button
-                id="refresh"
-                className="fa-solid fa-arrow-rotate-right refresh-icon"
-              ></button>
+              <RefreshBtn/>
+             
             </h2>
             <FormattedDate date={props.data.date} />
 
