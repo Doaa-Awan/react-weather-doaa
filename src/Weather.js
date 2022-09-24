@@ -3,21 +3,15 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import PreLoader from "./PreLoader";
 import Footer from "./Footer";
-import Switch from "./Switch";
 import WeatherForecast from "./WeatherForecast";
-// import ReactAnimatedWeather from "react-animated-weather/build/ReactAnimatedWeather";
 
-// import rain from "../public/videos/rain.mp4";
 
-// import Video from "./Video";
 
 export default function Weather(props) {
-  // const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({ ready: false });
   let [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    // console.log(response.data);
     setWeatherData({
       ready: true,
       coord: response.data.coord,
@@ -32,7 +26,6 @@ export default function Weather(props) {
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       icon: response.data.weather[0].icon,
     });
-    // setReady(true);
   }
 
   function search() {
@@ -48,15 +41,12 @@ export default function Weather(props) {
   }
 
   function updateCity(event) {
-    // event.preventDefault();
     setCity(event.target.value);
   }
 
   if (weatherData.ready) {
     return (
       <div className="bgContainer bgImgColor">
-       
-
         <div className="weather-app">
           <div className="container">
             <nav className="row">
@@ -82,24 +72,9 @@ export default function Weather(props) {
                   icon={weatherData.iconUrl}
                 />
               </div>
-              {/* <div className="">
-
-              </div> */}
-              {/* <div>
-                <ReactAnimatedWeather
-                  icon="RAIN"
-                  color="white"
-                  size={64}
-                  animate={true}
-                />
-              </div> */}
             </div>
-            {/* <button
-              className="fa-solid fa-volume-high audioBtn"
-              id="audioBtn"
-            ></button> */}
+
             <Footer />
-            <Switch />
           </div>
         </div>
       </div>
