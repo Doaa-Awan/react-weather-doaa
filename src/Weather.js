@@ -54,18 +54,8 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="videoContainer bgImgColor">
-        <video
-          autoPlay
-          loop
-          muted
-          plays-inline="true"
-          className="videoBG"
-          id="vid"
-        >
-          <source id="src" src="" type="video/mp4" />
-        </video>
-        {/* <Video code={props.data.icon} /> */}
+      <div className="bgContainer bgImgColor">
+       
 
         <div className="weather-app">
           <div className="container">
@@ -82,20 +72,19 @@ export default function Weather(props) {
                 />
                 <button className="fa-solid fa-magnifying-glass search-icon"></button>
               </form>
-              {/* <button
-                className="col-2 fa-solid fa-lightbulb lightBtn"
-                id="light"
-              ></button> */}
             </nav>
 
             <WeatherInfo data={weatherData} />
             <div className="row">
               <div className="col-xl-7">
-                <WeatherForecast coord={weatherData.coord} />
+                <WeatherForecast
+                  coord={weatherData.coord}
+                  icon={weatherData.iconUrl}
+                />
               </div>
-              <div className="">
+              {/* <div className="">
 
-              </div>
+              </div> */}
               {/* <div>
                 <ReactAnimatedWeather
                   icon="RAIN"

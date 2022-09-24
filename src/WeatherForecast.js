@@ -21,6 +21,11 @@ export default function WeatherForecast(props) {
       <div className="row">
         <div className="col">
           <div className="forecast" id="forecastList">
+            <WeatherForecastDay data={forecast[0]} icon={props.icon}/>
+          </div>
+        </div>
+        <div className="col">
+          <div className="forecast" id="forecastList">
             <WeatherForecastDay data={forecast[1]} />
           </div>
         </div>
@@ -37,11 +42,6 @@ export default function WeatherForecast(props) {
         <div className="col">
           <div className="forecast" id="forecastList">
             <WeatherForecastDay data={forecast[4]} />
-          </div>
-        </div>
-        <div className="col">
-          <div className="forecast" id="forecastList">
-            <WeatherForecastDay data={forecast[5]} />
           </div>
         </div>
       </div>

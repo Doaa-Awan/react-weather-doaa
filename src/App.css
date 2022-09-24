@@ -72,7 +72,7 @@ h3 {
   margin-bottom: 50px;
 }
 
-.videoContainer {
+.bgContainer {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -712,6 +712,8 @@ h3 {
   .forecast-icon canvas{
     height: 40px;
   }
+
+
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -786,7 +788,7 @@ h3 {
     display: none !important;
   }
 
-  .videoContainer {
+  .bgContainer {
     background: transparent;
     overflow: visible;
     height: auto;
@@ -797,8 +799,8 @@ h3 {
     width: 330px;
     min-height: auto;
     background: var(--clr-white);
-    border: 1px solid rgba(128, 128, 128, 0.5);
-    box-shadow: 0 0 10px #9ecaed;
+    /* border: 1px solid rgba(128, 128, 128, 0.5); */
+    box-shadow: 0 0 3px #9ecaed;
     border-radius: 30px;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -963,7 +965,7 @@ h3 {
     transition: all 200ms ease-in-out;
   }
 
-  .icon canvas {
+  .icon canvas{
     display: inline-block;
     position: relative;
     /* left: 35px; */
@@ -1045,10 +1047,17 @@ h3 {
   }
 
   .forecast-temp{
-    font-size: 20px;
+    font-size: 15px;
+  }
+
+  .forecast-day img{
+    display: block;
+    height: 20px;
+    width: 20px;
   }
 
   .forecast-icon canvas{
+    /* font-size: 10px; */
     height: 30px;
     color: blue;
     
