@@ -1,5 +1,4 @@
 import React from "react";
-// import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props) {
   let url = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
@@ -25,8 +24,6 @@ export default function WeatherForecastDay(props) {
     <span className="forecast-col">
       <div className="forecast-day text-uppercase ">{day()}</div>
       <div className="d-flex justify-content-center">
-        {/* <WeatherIcon code={props.data.weather[0].icon} color="white" /> */}
-        {/* <img src={props.icon} /> */}
         <img
           src={url}
           alt={props.data.weather[0].description}

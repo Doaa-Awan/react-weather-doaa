@@ -30,14 +30,7 @@ export default function WeatherTemperature(props) {
             </a>
           </span>
         </div>
-        {/* <div>
-          <p className="weather-description text-capitalize">
-            {props.description}
-          </p>
-          <p className="feels-like">
-            Feels like <span>{Math.round(props.feel)}</span>° C
-          </p>
-        </div> */}
+      
       </div>
     );
   } else {
@@ -53,14 +46,7 @@ export default function WeatherTemperature(props) {
             <span className="f">F</span>
           </span>
         </div>
-        {/* <div>
-          <p className="weather-description text-capitalize">
-            {props.description}
-          </p>
-          <p className="feels-like">
-            Feels like <span>{(Math.round(props.feel) * 9) / 5 + 32}</span>° F
-          </p>
-        </div> */}
+      
       </div>
     );
   }

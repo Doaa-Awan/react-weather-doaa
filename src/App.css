@@ -478,20 +478,6 @@ h3 {
     right: 0px;
   }
 
-  .audioBtn {
-    font-size: 13px;
-    height: 35px;
-    width: 80px;
-    margin-right: 0px;
-    bottom: 580px;
-    right: 110px;
-  }
-
-  .lightBtn {
-    font-size: 30px;
-    top: 13px;
-    left: -80px;
-  }
 
   .search-icon {
     right: 50px;
@@ -537,20 +523,17 @@ h3 {
     top: 10px;
   }
 
+  .units {
+    font-size: 15px;
+    left: -10px;
+  }
+
   .weather-description,
   .feels-like {
     bottom: 10px;
     font-size: 15px;
   }
 
-  .btns {
-    background-color: transparent;
-    border: 1px solid white;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
 
   .forecast {
     margin-right: 0;
