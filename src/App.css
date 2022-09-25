@@ -305,6 +305,8 @@ h3 {
 .forecast-day {
   font-weight: 200;
   font-size: 20px;
+  position: relative;
+  left: -5px;
 }
 
 /* .forecast-icon canvas {
